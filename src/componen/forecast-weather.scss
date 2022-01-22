@@ -1,0 +1,54 @@
+.forecast {
+ display: block;
+ padding: 7px;
+
+    
+
+    &-items {
+     display: flex;
+     overflow-x: scroll;
+
+     /* width */
+&::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgb(17, 153, 177);
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+    }
+
+    &-item {
+      padding: 6px;
+      padding: 6px;
+      border-right: 1px solid #b4b4b4;
+      margin-bottom: 5px;
+
+      &:last-of-type {
+          border-right: 0px;
+      }
+        &__hour{
+         margin: 0;
+         color: #b4b4b4;
+        }
+        
+        &__description{
+            margin: 0;
+        }
+    }
+}
